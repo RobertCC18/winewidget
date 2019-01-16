@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-    $.get( "https://winewidget.herokuapp.com/suggest?url=" + window.location.href, function( data ) {
+    $.get( "https://winewidget.herokuapp.com/suggest?url=https://therecipecritic.com/skillet-garlic-butter-herb-steak-and-potatoes/", function( data ) {
         $( ".winewidget-cont" ).html( data );
         console.log( "Load was performed." );
          $("#wineSlider").lightSlider({
