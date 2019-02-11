@@ -1,22 +1,25 @@
 <div class="widget-box row" id="box">
-  <div class="head-text-cont col-sm-12">
-  <h1>PERFECT PAIRING</h1>
-  </div>
-  <div class="slider-cont col-sm-12">
-  <ul id="wineSlider">
-  <li>
-      <h5>Lorem ipsum Cupidatat quis pariatur anim.</h5>
-  </li>
-  <!-- Add slider text in format shown above -->
-
+    <div class="head-text-cont col-sm-12">
+    <h1>PERFECT PAIRING</h1>
+    </div>
+    <div class="slider-cont col-sm-12">
+    <ul id="lightSlider">
+    {% for pairing in pairings %}
+    <li>
+        <!-- <h3>{{pairing}}</h3> -->
+        <p>A {{pairing}} would work nicely complimenting the {% for ingredient in ingredient_dict[pairing] %} {{ingredient}} {% endfor %}</p>
+    </li>
+    {% endfor %}
+    <!-- Add slider text in format shown above -->
       
-    <!-- End Slider Text -->
-</ul>
+      
+      <!-- End Slider Text -->
+  </ul>
+    </div>
+    <div class="button-cont col-sm-12">
+     <button type="button" class="btn btn-info" id="button">Get This Pairing!</button>
+    </div>
+   <div class="footer-cont col-sm-12">
+    <h5>+ Tons Of Other Adult Beverages</h5>
+    </div>
   </div>
-  <div class=" col-sm-12">
-   <button type="button" class="widget-link btn btn-info" id="button">Get This Pairing!</button>
-  </div>
- <div class="footer-cont col-sm-12">
-  <h5>+ Tons Of Other Adult Beverages</h5>
-  </div>
-</div>
