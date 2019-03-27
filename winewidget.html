@@ -1,25 +1,42 @@
-<div class="widget-box row" id="box">
-    <div class="head-text-cont col-sm-12">
-    <h1>PERFECT PAIRING</h1>
+<div class="_widget-cont">
+  <div class="_widget-header">
+    <h4 class='_header_text'> Recommended Wine </h4>
+  </div>
+  <div class="_widget_content">
+    <div class="_top_text">
+      <p> This recipie would pair well with </p>
     </div>
-    <div class="slider-cont col-sm-12">
-    <ul id="lightSlider">
-    {% for pairing in pairings %}
-    <li>
-        <!-- <h3>{{pairing}}</h3> -->
-        <p>A {{pairing}} would work nicely complimenting the {% for ingredient in ingredient_dict[pairing] %} {{ingredient}} {% endfor %}</p>
-    </li>
-    {% endfor %}
-    <!-- Add slider text in format shown above -->
-      
-      
-      <!-- End Slider Text -->
-  </ul>
+     <div class="_slider_cont">
+      <ul id="wineSlider">
+        <!-- start of slide 1 -->
+  <li>
+    <h2> Rich White </h2>
+      <img src="https://www.foodspaceapp.com/wp-content/uploads/2019/03/richwhite.png" />
+     <p class="_underslider_text">
+        A rich white wine would compliment the cheese, and accents the fish & herbs!
+      </p>
+  </li>
+        <!-- end of slide 1 -->
+        <!-- start of slide 2 -->
+  <li>
+    <h2> Dark Red </h2>
+     <img src="https://www.foodspaceapp.com/wp-content/uploads/2019/03/rose.png" />
+     <p class="_underslider_text">
+        A rich white wine would compliment the cheese, and accents the fish & herbs!
+      </p>
+        </li>
+        <!-- end of slide 2 -->
+</ul>
     </div>
-    <div class="button-cont col-sm-12">
-     <button type="button" class="btn btn-info" id="button">Get This Pairing!</button>
-    </div>
-   <div class="footer-cont col-sm-12">
-    <h5>+ Tons Of Other Adult Beverages</h5>
+    <div class="_underslider_text_cont">
+    
+      <button class="_widget_get_more">
+        Get this paring
+      </button>
+      <br>
+      <button class="_widget_open_more" data-toggle="modal" data-target="#winepopup">
+        or browse all options
+      </button>
     </div>
   </div>
+</div>
