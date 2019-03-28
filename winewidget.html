@@ -8,8 +8,10 @@
     </div>
      <div class="_slider_cont">
       <ul id="wineSlider">
-        <!-- start of slide 1 -->
-  <li>
+        <!-- start of slide 1 
+            * the data-target must match the corresponding popup below
+         -->
+  <li data-toggle="modal" data-target="#winepopup1">
     <h2> Rich White </h2>
       <img src="https://www.foodspaceapp.com/wp-content/uploads/2019/03/richwhite.png" />
      <p class="_underslider_text">
@@ -17,8 +19,10 @@
       </p>
   </li>
         <!-- end of slide 1 -->
-        <!-- start of slide 2 -->
-  <li>
+        <!-- start of slide 2
+          * the data-target must match the corresponding popup below
+         -->
+  <li data-toggle="modal" data-target="#winepopup2">
     <h2> Dark Red </h2>
      <img src="https://www.foodspaceapp.com/wp-content/uploads/2019/03/rose.png" />
      <p class="_underslider_text">
@@ -34,9 +38,171 @@
         Get this paring
       </button>
       <br>
-      <button class="_widget_open_more" data-toggle="modal" data-target="#winepopup">
+      <button class="_widget_open_more" >
         or browse all options
       </button>
     </div>
   </div>
 </div>
+
+
+<!-- modal for slide 1 start  
+  * Change the id of the first div below to match the 
+    targetid of the tier 1 slide   
+-->
+<div class="_popup_cont modal" id="winepopup1" tabindex="-1" role="dialog" aria-labelledby="winepopup1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+       <div class="_popup-header modal-header">
+    <h4 class='_header_text'> Recommended Wine </h4>
+  </div>
+      <div class="modal-body">
+        <div class="_popup_inner_cont">
+  <div class="_popup_sliders">
+   <div class="_popup_top_slider">
+     <div> <h2> Rich White </h2> </div>
+    </div>
+    <h6> The following varieties can be considered Rich White: </h6>
+     <ul class="_popup_bottom_slider">
+     <li> <img src="https://www.foodspaceapp.com/wp-content/uploads/2019/03/richwhite.png" />
+       <p>
+         Semillon
+       </p>
+       </li>
+     <li> <img src="https://www.foodspaceapp.com/wp-content/uploads/2019/03/richwhite.png" />
+       <p>
+         Marsanne
+       </p>
+       </li>
+     <li> <img src="https://www.foodspaceapp.com/wp-content/uploads/2019/03/richwhite.png" /> 
+       <p>
+         Voignier
+       </p>
+       </li>
+    </ul>
+    <div class="_popup_button_div">
+     <button class="_popup_get_more">
+        Browse This Wine
+      </button>
+      <br>
+      <a href="" class="_widget_open_more">
+        or browse all
+      </a>
+    </div>
+    <div class="_popup_paring_point">
+      <h3> Paring Points </h3>
+    </div>
+    <div class="_popup_ingredients">
+      <span class="_ingredient">salted butter</span>
+      <span class="_ingredient">lemon wedges</span>
+    </div>
+    <div class="_popup_notes">
+      <h6>Some notes About This Wine Pairing</h6>
+      <p>
+        Wine paring is both an art and a science, while we rely on the science to point you in a right direction,the are is in selecting the actual wine for it's specific caracteristic. If you want to learn more about applying the are of wine paring to your selection, you can check out this guide!
+      </p>
+    </div>
+    <div class="_popup_newsletter">
+    <h3> 
+      Sign up for more wine paring info & updates
+      </h3>
+      <input class="_popup_email" type="email" placeholder="Enter your email" />
+      <button class="submit btn btn-info"> Submit </button>
+    </div>
+    </div>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal for slide 1 end -->
+
+<!-- modal for slide 2 start 
+  * Change the id of the first div below to match the targetid of the 
+    tier 1 slide
+-->
+
+<div class="_popup_cont modal" id="winepopup2" tabindex="-1" role="dialog" aria-labelledby="winepopup1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+       <div class="_popup-header modal-header">
+    <h4 class='_header_text'> Recommended Wine </h4>
+  </div>
+      <div class="modal-body">
+        <div class="_popup_inner_cont">
+  <div class="_popup_sliders">
+   <div class="_popup_top_slider">
+     <div> <h2> Dark Red </h2> </div>
+    </div>
+    <h6> The following varieties can be considered Rich White: </h6>
+     <ul class="_popup_bottom_slider">
+     <li> <img src="https://www.foodspaceapp.com/wp-content/uploads/2019/03/richwhite.png" />
+       <p>
+         Semillon
+       </p>
+       </li>
+     <li> <img src="https://www.foodspaceapp.com/wp-content/uploads/2019/03/richwhite.png" />
+       <p>
+         Marsanne
+       </p>
+       </li>
+     <li> <img src="https://www.foodspaceapp.com/wp-content/uploads/2019/03/richwhite.png" /> 
+       <p>
+         Voignier
+       </p>
+       </li>
+        <li> <img src="https://www.foodspaceapp.com/wp-content/uploads/2019/03/richwhite.png" /> 
+       <p>
+         Voignier
+       </p>
+       </li>
+        <li> <img src="https://www.foodspaceapp.com/wp-content/uploads/2019/03/richwhite.png" /> 
+       <p>
+         Voignier
+       </p>
+       </li>
+    </ul>
+    <div class="_popup_button_div">
+     <button class="_popup_get_more">
+        Browse This Wine
+      </button>
+      <br>
+      <a href="" class="_widget_open_more">
+        or browse all
+      </a>
+    </div>
+    <div class="_popup_paring_point">
+      <h3> Paring Points </h3>
+    </div>
+    <div class="_popup_ingredients">
+      <span class="_ingredient">salted butter</span>
+      <span class="_ingredient">lemon wedges</span>
+    </div>
+    <div class="_popup_notes">
+      <h6>Some notes About This Wine Pairing</h6>
+      <p>
+        Wine paring is both an art and a science, while we rely on the science to point you in a right direction,the are is in selecting the actual wine for it's specific caracteristic. If you want to learn more about applying the are of wine paring to your selection, you can check out this guide!
+      </p>
+    </div>
+    <div class="_popup_newsletter">
+    <h3> 
+      Sign up for more wine paring info & updates
+      </h3>
+      <input class="_popup_email" type="email" placeholder="Enter your email" />
+      <button class="submit btn btn-info"> Submit </button>
+    </div>
+    </div>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal for slide 2 end -->
