@@ -9,11 +9,27 @@ jQuery(document).ready(function($) {
         $( "div.log" ).text( "Triggered ajaxError handler." );
     });
     
+    $.getScript( "https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" )
+      .done(function( script, textStatus ) {
+        console.log( textStatus );
+      })
+      .fail(function( jqxhr, settings, exception ) {
+        $( "div.log" ).text( "Triggered ajaxError handler." );
+    });
+    
     $('<link/>', {
    rel: 'stylesheet',
    type: 'text/css',
    href: 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'
 }).appendTo('head');
+    
+     $('<link/>', {
+   rel: 'stylesheet',
+   type: 'text/css',
+   href: 'https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css'
+}).appendTo('head');
+    
+    
     
     $.get( "https://winewidget.herokuapp.com/widget?secret_key=3c7a2dbb5e74be6568b0ba6c5b59a86d224b9ea80e10300b62968b1b&url=" + window.location.href, function( data ) {
         $( ".winewidget-cont" ).html( data );
