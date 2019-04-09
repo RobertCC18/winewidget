@@ -1,4 +1,20 @@
 jQuery(document).ready(function($) {
+    
+    //get bootstrap
+    $.getScript( "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" )
+      .done(function( script, textStatus ) {
+        console.log( textStatus );
+      })
+      .fail(function( jqxhr, settings, exception ) {
+        $( "div.log" ).text( "Triggered ajaxError handler." );
+    });
+    
+    $('<link/>', {
+   rel: 'stylesheet',
+   type: 'text/css',
+   href: 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'
+}).appendTo('head');
+    
     $.get( "https://winewidget.herokuapp.com/suggest?url=https://therecipecritic.com/skillet-garlic-butter-herb-steak-and-potatoes/", function( data ) {
         $( ".winewidget-cont" ).html( data );
         console.log( "Load was performed." );
