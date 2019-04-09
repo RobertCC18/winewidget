@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
    href: 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'
 }).appendTo('head');
     
-    $.get( "https://winewidget.herokuapp.com/suggest?url=https://therecipecritic.com/skillet-garlic-butter-herb-steak-and-potatoes/", function( data ) {
+    $.get( "https://winewidget.herokuapp.com/widget?secret_key=3c7a2dbb5e74be6568b0ba6c5b59a86d224b9ea80e10300b62968b1b&url=" + window.location.href, function( data ) {
         $( ".winewidget-cont" ).html( data );
         console.log( "Load was performed." );
          $(document).ready(function() {
