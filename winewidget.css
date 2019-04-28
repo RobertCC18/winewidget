@@ -18,7 +18,7 @@
 }
 
 ._popup_cont {
-  max-width: 1100px !important;
+  max-width: 850px !important;
   margin-right: auto;
   margin-left:auto;
   text-align:center;
@@ -35,7 +35,7 @@
 }
 
 ._widget-header {
-  color: white;
+  color: white !important;
   padding-top: 20px;
   padding-bottom: 20px;
   background: rgb(31,226,171);
@@ -45,7 +45,7 @@ background: linear-gradient(90deg, rgba(31,226,171,1) 0%, rgba(2,207,210,1) 100%
 }
 
 ._popup-header {
-  color: white;
+  color: white !important;
   padding-top: 20px;
   padding-bottom: 20px;
   background: rgb(31,226,171);
@@ -93,7 +93,7 @@ background: linear-gradient(90deg, rgba(104,48,218,1) 0%, rgba(138,90,238,1) 100
 }
 
 ._slider_cont {
-   max-width: 50%;
+   max-width: 75%;
   margin-right: auto;
   margin-left:auto;
  
@@ -108,7 +108,6 @@ background: linear-gradient(90deg, rgba(104,48,218,1) 0%, rgba(138,90,238,1) 100
 
 .lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
   background-color: #969696;
-  #EBEBEB
 }
 .lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li a {
   background-color: #EBEBEB;
@@ -191,10 +190,31 @@ background: linear-gradient(90deg, rgba(104,48,218,1) 0%, rgba(138,90,238,1) 100
 }
 
 .modal {
-  padding-left: 0px !important;
+ 	padding-left: 0px !important;
+	padding-right: 0px !important;
+  width: 850px;
+  right: 0 !important;
+  margin-top: 6em !important;
+	 margin-bottom: 1em !important;
+	    max-height: 85vh !important;
 }
 
 ._popup_bottom_slider .lslide {
   max-width: 250px !important;
   width: 250px !important;
+}
+
+._header_text {
+	width: 100%;
+	text-align:center;
+	color: white;
+}
+
+.lSSlideOuter .lSPager, .lSSlideOuter .lightSlider {
+    padding-left: 0;
+    list-style: none !important;
+}
+
+.modal::-webkit-scrollbar {
+   display: none !important;
 }
